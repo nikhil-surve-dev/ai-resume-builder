@@ -87,41 +87,17 @@ Custom design system with Material 3 color tokens, Manrope + Inter typography, g
 
 ## 📸 Screenshots
 
-<details>
-<summary><strong>🏠 Dashboard — Candidate Input Form</strong></summary>
+### 🏠 Dashboard
+![Dashboard](docs/screenshots/dashboard.png)
 
-> The home screen presents a clean, editorial-style form with fields for name, target role, skills (chip-based input), work experience, and education. Sidebar features AI insight cards and a simulated resume preview.
+### 📝 Form
+![Form](docs/screenshots/form.png)
 
-<img src="docs/screenshots/dashboard.png" alt="Dashboard" width="100%" />
+### 📊 Result
+![Result](docs/screenshots/result.png)
 
-</details>
-
-<details>
-<summary><strong>📝 Form — Detailed Input View</strong></summary>
-
-> The form section provides structured input fields with intuitive labels, interactive skill chips, and real-time validation — designed for a seamless data-entry experience.
-
-<img src="docs/screenshots/form.png" alt="Form Input" width="100%" />
-
-</details>
-
-<details>
-<summary><strong>📊 Results — AI Analysis & Resume Canvas</strong></summary>
-
-> The results page displays the AI-generated resume on a clean white canvas with an adjacent control panel featuring ATS score, keyword count, AI analysis insights, and export options.
-
-<img src="docs/screenshots/result.png" alt="Results Analysis" width="100%" />
-
-</details>
-
-<details>
-<summary><strong>📄 Resume — Professional PDF Output</strong></summary>
-
-> One-click PDF download generates a clean A4 document preserving the exact layout, typography, and formatting shown in the live preview.
-
-<img src="docs/screenshots/resume.png" alt="PDF Export" width="100%" />
-
-</details>
+### 📄 Resume
+![Resume](docs/screenshots/resume.png)
 
 ---
 

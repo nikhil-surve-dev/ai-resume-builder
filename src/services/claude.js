@@ -48,16 +48,16 @@ Education: ${education}
 
 Rules:
 - jobTitle must be the target role verbatim
-- contact should use placeholder data (candidate@email.com, (555) 000-0000, City, State)
+- contact fields must include only details explicitly supplied by the candidate; use empty strings for missing values and never invent an email, phone number, or location
 - Summary must be 2-3 impactful lines tailored to the target role
 - Each experience entry must have a "period" field (e.g. "2020 – 2023")
-- Experience must have exactly 3 bullet points with quantified achievements
+- For each experience item provided, write up to 3 strong bullet points. Never invent employers, titles, dates, duties, or metrics. Use quantified achievements only when the candidate supplied the numbers; otherwise write a factual qualitative bullet based only on their input
 - Use strong action verbs (Led, Engineered, Optimized, Delivered, etc.)
-- education must include "institution" (infer from input or use a reasonable one)
-- atsScore must be a realistic number between 70-95
-- keywordsFound must be a count of matched industry keywords
+- education must include "institution", but never guess or invent a school, degree, or graduation year; use an empty string for information the candidate did not provide
+- atsScore must be a heuristic estimate from 0 to 100 based only on the supplied content; do not imply it came from a real external ATS scan
+- keywordsFound must count only relevant terms explicitly supported by the supplied skills and target role; do not invent job-description matches
 - insights must have exactly 3 items: 2 "positive" and 1 "tip"
-- Do NOT leave any field empty or null`;
+- Never fabricate candidate details to fill a field. Use empty strings or empty arrays when information is missing. If no work experience was supplied, return an empty experience array. Insights must be grounded in the supplied facts and may ask the candidate to add missing information`;
 
   const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",

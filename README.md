@@ -177,6 +177,8 @@ VITE_OPENROUTER_API_KEY=sk-or-v1-your_key_here
 
 > 💡 **Tip:** Get a free API key at [openrouter.ai/keys](https://openrouter.ai/keys)
 
+> ⚠️ **Security note:** The current app sends requests directly from the browser using `VITE_OPENROUTER_API_KEY`. Vite bundles `VITE_` values into client-side code, where visitors can extract them. Treat this as a local/demo-only setup; do not use a real unrestricted key on a public deployment. For production, route requests through a backend that keeps the key server-side, add rate limits, and rotate any key previously exposed by a deployed build.
+
 ### 4️⃣ Start the Development Server
 
 ```bash
@@ -288,7 +290,7 @@ npm install
 VITE_OPENROUTER_API_KEY = sk-or-v1-your_key_here
 ```
 
-6. Click **Deploy site** 🎉
+6. Click **Deploy site** only for a demo deployment. The browser-side key configuration above is not safe for a public production deployment until API requests are moved behind a server-side proxy.
 
 ### SPA Redirect Fix
 

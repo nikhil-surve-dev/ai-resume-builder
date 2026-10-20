@@ -12,28 +12,22 @@ Format:
   "name": "",
   "jobTitle": "",
   "contact": {
-    "email": "candidate@email.com",
-    "phone": "(555) 000-0000",
-    "location": "City, State"
+    "email": "",
+    "phone": "",
+    "location": ""
   },
   "summary": "",
-  "experience": [
-    {
-      "title": "",
-      "company": "",
-      "period": "2022 – Present",
-      "bullets": ["", "", ""]
-    }
-  ],
+  "experience": [],
   "skills": [],
   "education": {
     "degree": "",
     "institution": "",
     "year": ""
   },
-  "atsScore": 85,
-  "keywordsFound": 10,
+  "atsScore": 0,
+  "keywordsFound": 0,
   "insights": [
+    { "type": "positive", "text": "" },
     { "type": "positive", "text": "" },
     { "type": "tip", "text": "" }
   ]
